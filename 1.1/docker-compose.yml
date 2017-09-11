@@ -1,0 +1,6 @@
+version: "2"
+
+services:
+  gearman:
+    image: digitalcanvasdesign/gearman-job-server:1.1
+    build: ./
