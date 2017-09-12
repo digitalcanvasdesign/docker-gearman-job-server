@@ -16,15 +16,18 @@ ENV GEARMAN_URL="https://github.com/gearman/gearmand/releases/download/$GEARMAN_
 		libc-dev \
 		make \
 		pkg-config \
-        wget" \
+        \
+        wget\
+        " \
     RUN_DEPENDENCIES="\
+        libboost-all-dev \
+        libevent-dev \
         bison \
         flex \
         libtool \
-        libboost-all-dev \
-        libevent-dev \
         uuid-dev \
-        gperf"
+        gperf \
+        "
 
 USER root
 
